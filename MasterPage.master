@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="App_Themes/Normal/Normal.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+        <div id="wrapper">
+
+            <div id="header">
+<h1>Lead Generator</h1>
+                <div id="HeaderPic">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/images/LeadBase logo 2.jpg" />
+                </div>
+
+            </div>
+
+            <div id="contents">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+            <div id="footer">
+
+                <p>Copyright © Lead-Base 2013. All Rights Reserved</p>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
